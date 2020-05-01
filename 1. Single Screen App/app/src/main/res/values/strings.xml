@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Quidditch</string>
+    <string name="name">Name : </string>
+    <string name="quidditch">Quidditch</string>
+    <string name="players">Players : </string>
+    <string name="number">Seven (Three Chasers, two Beaters, the Keeper, and the Seeker)</string>
+    <string name="location">Location : </string>
+    <string name="place">Hogwarts School of Witchcraft and Wizardry</string>
+    <string name="objective">Objective : </string>
+    <string name="objective_detail">There are three different balls: the Quaffle, the two Bludgers, and the Golden Snitch. The Chasers and the Keeper respectively score with and defend the goals against the Quaffle; the two Beaters bat the Bludgers away from their teammates and towards their opponents; and the Seeker locates and catches the Golden Snitch, whose capture simultaneously wins the Seeker team 150 points and ends the game. The team with the most points at the end wins.</string>
+</resources>
