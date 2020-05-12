@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorLightBlue"
+    tools:context=".InfoActivity">
+
+    <View
+        android:id="@+id/bar1"
+        android:layout_width="40dp"
+        android:layout_height="2dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="50dp"
+        android:background="@color/colorPrimaryDark" />
+
+    <View
+        android:id="@+id/bar2"
+        android:layout_width="24dp"
+        android:layout_height="2dp"
+        android:layout_below="@id/bar1"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/colorPrimaryDark" />
+
+    <TextView
+        android:id="@+id/welcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/bar2"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="@string/welcome"
+        android:textSize="40sp" />
+
+    <ImageView
+
+        android:id="@+id/basket2"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_below="@id/bar2"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="60dp"
+        android:src="@drawable/basket_2" />
+
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/basket2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="40dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:fontFamily="sans-serif-medium"
+            android:text="@string/team_names"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/TeamA"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/teamA"
+            android:inputType="textCapWords"
+            android:maxLines="1" />
+
+        <EditText
+            android:id="@+id/TeamB"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:hint="@string/teamB"
+            android:inputType="textCapWords"
+            android:maxLines="1" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/lets_play"
+        android:layout_width="240dp"
+        android:layout_height="48dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="40dp"
+        android:background="@drawable/rounded_button"
+        android:text="@string/play"
+        android:textColor="@color/colorWhite" />
+
+</RelativeLayout>
