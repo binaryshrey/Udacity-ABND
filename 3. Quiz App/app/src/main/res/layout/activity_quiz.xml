@@ -1,0 +1,554 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".QuizActivity"
+    android:background="@color/colorWhite">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/q1_header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:orientation="vertical">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@color/colorWhite"
+                card_view:cardBackgroundColor="@color/colorWhite"
+                card_view:cardCornerRadius="10dp"
+                card_view:cardElevation="0dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/thumb_q1"
+                        android:layout_width="match_parent"
+                        android:layout_height="240dp"
+                        android:scaleType="centerCrop"
+                        android:src="@mipmap/lotad" />
+
+                    <TextView
+                        android:id="@+id/correct_q1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/thumb_q1"
+                        android:layout_margin="8dp"
+                        android:text="@string/correct"
+                        android:textColor="@color/colorGreen"
+                        android:visibility="invisible"
+                        android:textSize="16sp"/>
+
+                    <TextView
+                        android:id="@+id/wrong_q1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/thumb_q1"
+                        android:layout_margin="8dp"
+                        android:text="@string/wrong1"
+                        android:textColor="@color/colorRed"
+                        android:visibility="invisible"
+                        android:textSize="16sp"/>
+
+                    <TextView
+                        android:id="@+id/q1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/correct_q1"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginRight="8dp"
+                        android:layout_marginBottom="8dp"
+                        android:text="@string/question1"
+                        android:textSize="16sp"/>
+
+                    <CheckBox
+                        android:id="@+id/mCB1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/q1"
+                        android:text="@string/fire" />
+
+                    <CheckBox
+                        android:id="@+id/mCB2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/mCB1"
+                        android:text="@string/water" />
+
+                    <CheckBox
+                        android:id="@+id/mCB3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/mCB2"
+                        android:text="@string/grass" />
+
+                    <CheckBox
+                        android:id="@+id/mCB4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/mCB3"
+                        android:text="@string/electric" />
+
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/submit_1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/mCB4"
+                        android:layout_centerHorizontal="true"
+                        android:backgroundTint="@color/colorPrimaryDark"
+                        android:text="@string/submit" />
+
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/q2_header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/q1_header"
+            android:layout_margin="8dp"
+            android:orientation="vertical">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@color/colorWhite"
+                card_view:cardBackgroundColor="@color/colorWhite"
+                card_view:cardCornerRadius="10dp"
+                card_view:cardElevation="0dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/thumb_q2"
+                        android:layout_width="match_parent"
+                        android:layout_height="240dp"
+                        android:scaleType="centerCrop"
+                        android:src="@mipmap/vaporeon" />
+
+                    <TextView
+                        android:id="@+id/correct_q2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/thumb_q2"
+                        android:layout_margin="8dp"
+                        android:text="@string/correct"
+                        android:textColor="@color/colorGreen"
+                        android:visibility="invisible"
+                        android:textSize="16sp"/>
+
+                    <TextView
+                        android:id="@+id/wrong_q2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/thumb_q2"
+                        android:layout_margin="8dp"
+                        android:text="@string/wrong2"
+                        android:textColor="@color/colorRed"
+                        android:visibility="invisible"
+                        android:textSize="16sp"/>
+
+                    <TextView
+                        android:id="@+id/q2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/correct_q2"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginRight="8dp"
+                        android:layout_marginBottom="8dp"
+                        android:text="@string/question2"
+                        android:textSize="16sp"/>
+
+                    <RadioGroup
+                        android:id="@+id/radioGroup1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/q2"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginRight="8dp"
+                        android:layout_marginBottom="8dp"
+                        android:orientation="vertical">
+
+                        <RadioButton
+                            android:id="@+id/rb1_1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/magikarp" />
+
+                        <RadioButton
+                            android:id="@+id/rb1_2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/squirtle" />
+
+                        <RadioButton
+                            android:id="@+id/rb1_3"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/eevee" />
+
+                        <RadioButton
+                            android:id="@+id/rb1_4"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/jolteon" />
+
+                    </RadioGroup>
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/submit_2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/radioGroup1"
+                        android:layout_centerHorizontal="true"
+                        android:backgroundTint="@color/colorPrimaryDark"
+                        android:text="@string/submit" />
+
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/q3_header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/q2_header"
+            android:layout_margin="8dp"
+            android:orientation="vertical">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@color/colorWhite"
+                card_view:cardBackgroundColor="@color/colorWhite"
+                card_view:cardCornerRadius="10dp"
+                card_view:cardElevation="0dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/thumb_q3"
+                        android:layout_width="match_parent"
+                        android:layout_height="240dp"
+                        android:scaleType="centerCrop"
+                        android:src="@mipmap/mudkip" />
+
+                    <TextView
+                        android:id="@+id/correct_q3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/thumb_q3"
+                        android:layout_margin="8dp"
+                        android:text="@string/correct"
+                        android:textColor="@color/colorGreen"
+                        android:visibility="invisible"
+                        android:textSize="16sp"/>
+
+                    <TextView
+                        android:id="@+id/wrong_q3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/thumb_q3"
+                        android:layout_margin="8dp"
+                        android:text="@string/wrong3"
+                        android:textColor="@color/colorRed"
+                        android:visibility="invisible"
+                        android:textSize="16sp"/>
+
+                    <TextView
+                        android:id="@+id/q3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/correct_q3"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginRight="8dp"
+                        android:layout_marginBottom="8dp"
+                        android:text="@string/question3"
+                        android:textSize="16sp"/>
+
+                    <RadioGroup
+                        android:id="@+id/radioGroup2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/q3"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginRight="8dp"
+                        android:layout_marginBottom="8dp"
+                        android:orientation="vertical">
+
+                        <RadioButton
+                            android:id="@+id/rb2_1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/fire" />
+
+                        <RadioButton
+                            android:id="@+id/rb2_2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/water" />
+
+                        <RadioButton
+                            android:id="@+id/rb2_3"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/grass" />
+
+                        <RadioButton
+                            android:id="@+id/rb2_4"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/electric" />
+
+                    </RadioGroup>
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/submit_3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/radioGroup2"
+                        android:layout_centerHorizontal="true"
+                        android:backgroundTint="@color/colorPrimaryDark"
+                        android:text="@string/submit" />
+
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/q4_header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/q3_header"
+            android:layout_margin="8dp"
+            android:orientation="vertical">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@color/colorWhite"
+                card_view:cardBackgroundColor="@color/colorWhite"
+                card_view:cardCornerRadius="10dp"
+                card_view:cardElevation="0dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/thumb_q4"
+                        android:layout_width="match_parent"
+                        android:layout_height="240dp"
+                        android:scaleType="centerCrop"
+                        android:src="@mipmap/question_4" />
+
+                    <TextView
+                        android:id="@+id/correct_q4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/thumb_q4"
+                        android:layout_margin="8dp"
+                        android:text="@string/correct"
+                        android:textColor="@color/colorGreen"
+                        android:visibility="invisible"
+                        android:textSize="16sp"/>
+
+                    <TextView
+                        android:id="@+id/wrong_q4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/thumb_q4"
+                        android:layout_margin="8dp"
+                        android:text="@string/wrong4"
+                        android:textColor="@color/colorRed"
+                        android:visibility="invisible"
+                        android:textSize="16sp"/>
+
+                    <TextView
+                        android:id="@+id/q4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/correct_q4"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginRight="8dp"
+                        android:layout_marginBottom="8dp"
+                        android:text="@string/question4"
+                        android:textSize="16sp"/>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/input"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginRight="8dp"
+                        android:layout_marginBottom="8dp"
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:layout_below="@id/q4"
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+                        <EditText
+                            android:id="@+id/enter_q4"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="@string/guess"
+                            android:textColorHint="@color/colorBlack"
+                            android:inputType="textCapWords"
+                            android:maxLines="1" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/submit_4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/input"
+                        android:layout_centerHorizontal="true"
+                        android:backgroundTint="@color/colorPrimaryDark"
+                        android:text="@string/submit" />
+
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/q5_header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/q4_header"
+            android:layout_margin="8dp"
+            android:orientation="vertical">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@color/colorWhite"
+                card_view:cardBackgroundColor="@color/colorWhite"
+                card_view:cardCornerRadius="10dp"
+                card_view:cardElevation="0dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/thumb_q5"
+                        android:layout_width="match_parent"
+                        android:layout_height="240dp"
+                        android:scaleType="centerCrop"
+                        android:src="@mipmap/beedribs" />
+
+                    <TextView
+                        android:id="@+id/correct_q5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/thumb_q5"
+                        android:layout_margin="8dp"
+                        android:text="@string/correct"
+                        android:textColor="@color/colorGreen"
+                        android:visibility="invisible"
+                        android:textSize="16sp"/>
+
+                    <TextView
+                        android:id="@+id/wrong_q5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/thumb_q5"
+                        android:layout_margin="8dp"
+                        android:text="@string/wrong5"
+                        android:textColor="@color/colorRed"
+                        android:visibility="invisible"
+                        android:textSize="16sp"/>
+
+                    <TextView
+                        android:id="@+id/q5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/correct_q5"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginRight="8dp"
+                        android:layout_marginBottom="8dp"
+                        android:text="@string/question5"
+                        android:textSize="16sp"/>
+
+                    <RadioGroup
+                        android:id="@+id/radioGroup3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/q5"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginRight="8dp"
+                        android:layout_marginBottom="8dp"
+                        android:orientation="vertical">
+
+                        <RadioButton
+                            android:id="@+id/rb3_1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/bug" />
+
+                        <RadioButton
+                            android:id="@+id/rb3_2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/water" />
+
+                        <RadioButton
+                            android:id="@+id/rb3_3"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/grass" />
+
+                        <RadioButton
+                            android:id="@+id/rb4_4"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/electric" />
+
+                    </RadioGroup>
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/submit_5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/radioGroup3"
+                        android:layout_centerHorizontal="true"
+                        android:backgroundTint="@color/colorPrimaryDark"
+                        android:text="@string/submit" />
+
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/finish"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_below="@+id/q5_header"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:backgroundTint="@color/colorPrimaryDark"
+            android:text="@string/finish" />
+
+    </RelativeLayout>
+
+</ScrollView>
